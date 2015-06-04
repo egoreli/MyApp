@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>WIN-TQBCKV448DF</Machine>
+    <WindowsUser>t-ligore</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>86a36105-6895-4bc7-8864-ffbc150794e7</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\bld\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>72A0B71BDFF4A139613F1453E9C90E38271C93E6980385458F8B2DC977A8FD5E</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>86a36105-6895-4bc7-8864-ffbc150794e7_1.0.0.0_neutral__s60rpehcxdjme</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>86a36105-6895-4bc7-8864-ffbc150794e7_s60rpehcxdjme!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>86a36105-6895-4bc7-8864-ffbc150794e7</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=t-ligore</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-05-22T21:14:22.637</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Desktop\TrailRater\default.html">
+      <PackagePath>default.html</PackagePath>
+      <Modified>2015-05-26T21:22:52.716</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\images\africa.jpg">
+      <PackagePath>images\africa.jpg</PackagePath>
+      <Modified>2015-05-21T02:57:58.428</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\images\Cliche.jpg">
+      <PackagePath>images\Cliche.jpg</PackagePath>
+      <Modified>2015-05-21T03:01:35.404</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\images\colorado.jpg">
+      <PackagePath>images\colorado.jpg</PackagePath>
+      <Modified>2015-05-21T02:59:10.662</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\images\Lake.jpg">
+      <PackagePath>images\Lake.jpg</PackagePath>
+      <Modified>2015-05-21T03:01:48.453</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\images\long_island.jpg">
+      <PackagePath>images\long_island.jpg</PackagePath>
+      <Modified>2015-05-21T02:58:31.465</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\images\main.jpg">
+      <PackagePath>images\main.jpg</PackagePath>
+      <Modified>2015-05-21T22:13:00.106</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\images\Majestic,jpg.jpg">
+      <PackagePath>images\Majestic,jpg.jpg</PackagePath>
+      <Modified>2015-05-21T03:00:30.486</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\images\Majestic.jpg">
+      <PackagePath>images\Majestic.jpg</PackagePath>
+      <Modified>2015-05-21T03:00:39.433</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\images\Musical.jpg">
+      <PackagePath>images\Musical.jpg</PackagePath>
+      <Modified>2015-05-21T03:01:17.142</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\images\p2.jpg">
+      <PackagePath>images\p2.jpg</PackagePath>
+      <Modified>2015-05-21T22:12:13.352</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\images\p3.jpg">
+      <PackagePath>images\p3.jpg</PackagePath>
+      <Modified>2015-05-21T22:12:18.899</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\images\p4.jpg">
+      <PackagePath>images\p4.jpg</PackagePath>
+      <Modified>2015-05-21T22:12:25.781</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\images\p5.jpg">
+      <PackagePath>images\p5.jpg</PackagePath>
+      <Modified>2015-05-21T22:12:36.621</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\images\p6.jpg">
+      <PackagePath>images\p6.jpg</PackagePath>
+      <Modified>2015-05-21T22:12:46.382</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\images\Peaceful.jpg">
+      <PackagePath>images\Peaceful.jpg</PackagePath>
+      <Modified>2015-05-21T03:00:45.325</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\images\river.jpg">
+      <PackagePath>images\river.jpg</PackagePath>
+      <Modified>2015-05-21T02:59:33.201</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\images\utah.jpg">
+      <PackagePath>images\utah.jpg</PackagePath>
+      <Modified>2015-05-21T02:57:43.527</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\images\like.png">
+      <PackagePath>images\like.png</PackagePath>
+      <Modified>2015-05-22T21:13:44.186</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\images\logo.scale-100.png">
+      <PackagePath>images\logo.scale-100.png</PackagePath>
+      <Modified>2015-04-03T00:55:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\images\smalllogo.scale-100.png">
+      <PackagePath>images\smalllogo.scale-100.png</PackagePath>
+      <Modified>2015-04-03T00:55:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\images\splashscreen.scale-100.png">
+      <PackagePath>images\splashscreen.scale-100.png</PackagePath>
+      <Modified>2015-04-03T00:55:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\images\storelogo.scale-100.png">
+      <PackagePath>images\storelogo.scale-100.png</PackagePath>
+      <Modified>2015-04-03T00:55:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+      <Modified>2015-05-26T21:28:48.583</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WinJS\css\ui-dark.css">
+      <PackagePath>WinJS\css\ui-dark.css</PackagePath>
+      <Modified>2015-05-21T19:47:09.506</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WinJS\css\ui-light.css">
+      <PackagePath>WinJS\css\ui-light.css</PackagePath>
+      <Modified>2015-05-21T19:47:09.540</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+      <Modified>2015-05-26T22:54:05.149</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WinJS\js\en-US\ui.strings.js">
+      <PackagePath>WinJS\js\en-US\ui.strings.js</PackagePath>
+      <Modified>2015-05-21T19:47:10.316</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WinJS\js\WinJS.js">
+      <PackagePath>WinJS\js\WinJS.js</PackagePath>
+      <Modified>2015-05-21T19:47:09.983</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WinJS\js\WinJS.intellisense.js">
+      <PackagePath>WinJS\js\WinJS.intellisense.js</PackagePath>
+      <Modified>2015-05-21T19:47:09.610</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WinJS\js\WinJS.intellisense-setup.js">
+      <PackagePath>WinJS\js\WinJS.intellisense-setup.js</PackagePath>
+      <Modified>2015-05-21T19:47:09.636</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WinJS\js\WinJS.min.js">
+      <PackagePath>WinJS\js\WinJS.min.js</PackagePath>
+      <Modified>2015-05-21T19:47:10.228</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WinJS\fonts\Symbols.ttf">
+      <PackagePath>WinJS\fonts\Symbols.ttf</PackagePath>
+      <Modified>2015-05-21T19:47:09.575</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WinJS\js\WinJS.min.js.map">
+      <PackagePath>WinJS\js\WinJS.min.js.map</PackagePath>
+      <Modified>2015-05-21T19:47:10.270</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\bin\Debug\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-05-22T21:14:22.454</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
