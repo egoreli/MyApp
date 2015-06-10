@@ -50,9 +50,7 @@
                 <div class="simple_ItemTemplate" data-win-control="WinJS.Binding.Template" style="display: none">
                      <div class="overlaidItemTemplate">
                         <img class="image" data-win-bind="src: picture; alt: title" />
-                            <!--<div class="overlay">
-                                <h2 class="ItemTitle" data-win-bind="textContent: title"></h2>
-                            </div>-->
+                           
                         </div>
                 </div>
                 <div id="simple_FlipView" class="flipView" data-win-control="WinJS.UI.FlipView"
@@ -70,40 +68,21 @@
             <div class="description"> 
                 <h2 class="trail-title"> Rainier Trail </h2>
                 <p class="trail-location">  Seattle, WA </p>
-                <!--DESCRIPTION BUTTON-->
-                
-                <table> 
-                    <tr>
-                        <td>
-                            <h3> Description: </h3>
-                        </td>
-                        <td>
-                             <button id="runAnimation">Show Description</button><br />
-                        </td>
-                    </tr>
-
-                </table>
+               
                 <p class="trail-description" id="description-content"> this is the description</p>
 
                 
-                <!--END DESCRIPTION BUTTON-->
+   
                 <table> 
                     <tr class="detail">
                         <td>Rate this trail: </td>
                         <td class="control">
-                            <div class="rating" data-win-control="WinJS.UI.Rating" data-win-options="{averageRating: 3.4, onchange: basics.changeRating}"></div>
+                            <div class="rating" data-win-control="WinJS.UI.Rating" data-win-options="{averageRating: 3.4}"></div>
                         </td>
                     </tr>
                 </table>  
 
-                <table> 
-                    <tr id="like">
-                        <td>Like this hike: </td>
-                        <td id="like-button">
-                            <div> <img src="/images/like.png" style="width:25px;height:25px">  </div>
-                        </td>
-                    </tr>
-                </table>  
+               
                 
            
        
@@ -112,25 +91,38 @@
 
 
         <div class="home-ui">
-            <h2>Welcome to TrailRater</h2>
-            <img src="http://seattlemag.com/sites/seattlemag.advantagelabs.com/files/article/camping-and-hiking/0712heathermeadows.jpg"> 
-            <h4> Your Resource for the Best Trails in the Seattle Area </h4>
-            <p> The outdoors at your fingertips! </p>
-                <p>TrailRater is THE app for exploring the outdoors.
-                Going on a trip to a national park? Looking for a place near home to hike, bike, or run? Searching for something new to do on the weekends?
-                Even in a big city you might be surprised by how much nature surrounds you, and never has it been easier to discover and share!
-                Browse through guides for 50,000 trails across North America complete with photos, descriptions, and ratings for all yout favorite outdoor activities 
-            </p>
-            <!--Search Box-->
-            <table> 
-                    <tr >
-                        <td>Search for a Trail: </td>
-                        <td class="box">
-                            <div id="search-box"> </div>
-                        </td>
-                    </tr>
-                </table>  
+            <!--ListView-->
 
+           <!-- Simple template for the ListView instantiation  -->
+            <div class="myListTemplate" data-win-control="WinJS.Binding.Template" style="display: none">
+                <div class="myListTemplate">
+                    <img src="#" class="myListTemplate-Image" data-win-bind="src: preview" />
+                    <div class="myListTemplate-Detail">
+                        <h4 data-win-bind="textContent: title"></h4>
+                        <h6 data-win-bind="textContent: description"></h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The declarative markup necesary for ListView instantiation -->
+            <!-- Call WinJS.UI.processAll() in your initialization code -->
+            <div id="listView"
+                 class="win-selectionstylefilled"
+                 data-win-control="WinJS.UI.ListView"
+                 data-win-options="{
+                        itemDataSource: myList.data.dataSource,
+                        itemTemplate: select('.myListTemplate'),
+                        selectionMode: 'none',
+                        tapBehavior: 'none',
+                        layout: { type: WinJS.UI.ListLayout }
+                }">
+            </div>
+
+
+
+
+
+            <!--End ListView-->
 
         </div>  <!-- closes home-ui-->
 
