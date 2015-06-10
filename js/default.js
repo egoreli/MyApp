@@ -7,33 +7,8 @@
     var activation = Windows.ApplicationModel.Activation;
 
     //FIRST SPLIT VIEW
-    //WinJS.Namespace.define("Sample", {
-    //    splitView: null,
-    //    togglePane: WinJS.UI.eventHandler(function (ev) {
-    //        if (Sample.splitView) {
-    //            Sample.splitView.paneHidden = !Sample.splitView.paneHidden;
 
-
-    //        }
-    //    }),
-    //    trailClicked: WinJS.UI.eventHandler(function (ev) {
-
-    //        //get the trail-id
-    //        var trailId = ev.currentTarget.dataset.trailId;
-    //        updateUI(allTrails[trailId]);
-    //    }),
-    //    homeClicked: WinJS.UI.eventHandler(function (ev) {
-    //        //add remove tags
-    //        document.body.classList.add("show-home");
-    //        document.body.classList.remove("show-trail");
-
-    //    })
-
-    //});
-
-    //
-
-    var Sample = {
+    var Sample = window.Sample = {
         splitView: null,
             togglePane: WinJS.UI.eventHandler(function (ev) {
                 if (Sample.splitView) {
@@ -56,7 +31,7 @@
             })
     };
 
-    window.Sample = Sample;
+   
 
 
 
