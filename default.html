@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>App12</title>
+    <title>SampleApp</title>
 
     <!-- WinJS references -->
     <!-- To get the latest version of WinJS, go to: http://go.microsoft.com/fwlink/?LinkId=533245 -->
@@ -14,15 +14,12 @@
     <script src="js/default.js"></script>
 </head>
 <body class="show-home">
-    
-
-    <div id="app">
-
+<div id="app">
     <!-- SPLIT VIEW -->
     <div class="splitView" data-win-control="WinJS.UI.SplitView" data-win-options="{
         shownDisplayMode: WinJS.UI.SplitView.ShownDisplayMode.inline,
-	    hiddenDisplayMode: WinJS.UI.SplitView.HiddenDisplayMode.inline
-    }">
+        hiddenDisplayMode: WinJS.UI.SplitView.HiddenDisplayMode.inline
+        }">
         <!-- Pane area -->
         <div>
             <div class="header">
@@ -35,107 +32,75 @@
                 <div data-trail-id="0" data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Snoqualmie Falls Trail', icon: 'mappin', onclick: mySplitView.trailClicked}"></div>
                 <div data-trail-id="1" data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Foster Island Trail', icon: 'mappin', onclick: mySplitView.trailClicked}"></div>
                 <div data-trail-id="2" data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Alki Trail', icon: 'mappin', onclick: mySplitView.trailClicked}"></div>
-                
-               
             </div>
         </div>
-
         <!-- Content area -->
         <div class="contenttext">
             <h1>TrailRater</h1>
-
             <div class="trail-ui"> 
                 <!-- FLIP VIEW -->
-            
+
                 <div class="simple_ItemTemplate" data-win-control="WinJS.Binding.Template" style="display: none">
-                     <div class="overlaidItemTemplate">
+                    <div class="overlaidItemTemplate">
                         <img class="image" data-win-bind="src: picture; alt: title" />
-                           
-                        </div>
+                    </div>
                 </div>
                 <div id="simple_FlipView" class="flipView" data-win-control="WinJS.UI.FlipView"
-                        data-win-options="{
-                            itemDataSource: DefaultData.bindingList.dataSource,
-                            itemTemplate: select('.simple_ItemTemplate')
-                         }">
+                    data-win-options="{
+                    itemDataSource: DefaultData.bindingList.dataSource,
+                    itemTemplate: select('.simple_ItemTemplate')
+                    }">
                 </div>
-             
-             <!-- END FLIP VIEW -->
 
-        
-
-            <!-- DESCRIPTION -->
-            <div class="description"> 
-                <h2 class="trail-title"> Rainier Trail </h2>
-                <p class="trail-location">  Seattle, WA </p>
-               
-                <p class="trail-description" id="description-content"> this is the description</p>
-
-                
-                <!--RATING-->
-                <table> 
-                    <tr class="detail">
-                        <td>Rate this trail: </td>
-                        <td class="control">
-                            <div class="rating" data-win-control="WinJS.UI.Rating" data-win-options="{averageRating: 3.4}"></div>
-                        </td>
-                    </tr>
-                </table>  
-                 <!--END RATING-->
-               
-                
-           
-       
-           </div>
-        </div>  <!-- closes trail-ui-->
-
-
-        <div class="home-ui">
-            <!--ListView-->
-
-           <!-- Simple template for the ListView instantiation  -->
-            <div class="myListTemplate" data-win-control="WinJS.Binding.Template" style="display: none" >
-                <div class="myListTemplate" >
-                    <img src="#" class="myListTemplate-Image" data-win-bind="src: preview" />
-                    <div class="myListTemplate-Detail">
-                        <h4 data-win-bind="textContent: title"></h4>
-                        <h6 data-win-bind="textContent: description"></h6>
-                         <div class="avgRating" data-win-control="WinJS.UI.Rating"  data-win-bind="winControl.averageRating: averageRating" ></div>
-                    </div> 
+                <!-- END FLIP VIEW -->
+                <!-- DESCRIPTION -->
+                <div class="description"> 
+                    <h2 class="trail-title"> Rainier Trail </h2>
+                    <p class="trail-location">  Seattle, WA </p>
+                    <p class="trail-description" id="description-content"> this is the description</p>
+                    <!--RATING-->
+                    <table> 
+                        <tr class="detail">
+                            <td>Rate this trail: </td>
+                            <td class="control">
+                                <div class="rating" data-win-control="WinJS.UI.Rating" data-win-options="{averageRating: 3.4}"></div>
+                            </td>
+                        </tr>
+                    </table>  
+                    <!--END RATING-->
                 </div>
-            </div>
+            </div>  <!-- closes trail-ui-->
+            <div class="home-ui">
+                <!--ListView-->
+                <!-- Simple template for the ListView instantiation  -->
+                <div class="myListTemplate" data-win-control="WinJS.Binding.Template" style="display: none" >
+                    <div class="myListTemplate" >
+                        <img src="#" class="myListTemplate-Image" data-win-bind="src: preview" />
+                        <div class="myListTemplate-Detail">
+                            <h4 data-win-bind="textContent: title"></h4>
+                            <h6 data-win-bind="textContent: description"></h6>
+                            <div class="avgRating" data-win-control="WinJS.UI.Rating"  data-win-bind="winControl.averageRating: averageRating" ></div>
+                        </div> 
+                    </div>
+                </div>
 
-            <!-- The declarative markup necesary for ListView instantiation -->
-            <!-- Call WinJS.UI.processAll() in your initialization code -->
-            <div id="listView"
-                 class="win-selectionstylefilled"
-                 data-win-control="WinJS.UI.ListView"
-                 data-win-options="{
-                        itemDataSource: myList.data.dataSource,
-                        itemTemplate: select('.myListTemplate'),
-                        selectionMode: 'single',
-                        tapBehavior: 'invokeOnly',
-                         
-                        layout: { type: WinJS.UI.ListLayout }
-                }">
-            </div>
-
-
-
-
-
-            <!--End ListView-->
-
-        </div>  <!-- closes home-ui-->
-
-    </div>
-
+                <!-- The declarative markup necesary for ListView instantiation -->
+                <!-- Call WinJS.UI.processAll() in your initialization code -->
+                <div id="listView"
+                    class="win-selectionstylefilled"
+                    data-win-control="WinJS.UI.ListView"
+                    data-win-options="{
+                    itemDataSource: myList.data.dataSource,
+                    itemTemplate: select('.myListTemplate'),
+                    selectionMode: 'single',
+                    tapBehavior: 'invokeOnly',
+                    layout: { type: WinJS.UI.ListLayout }
+                    }">
+                </div>
+                <!--End ListView-->
+            </div>  <!-- closes home-ui-->
+        </div>
     </div> 
-    </div>
-        
-   
-    
-
-
+</div>
 </body>
 </html>
