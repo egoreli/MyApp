@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>App1</title>
+    <title>App12</title>
 
     <!-- WinJS references -->
     <!-- To get the latest version of WinJS, go to: http://go.microsoft.com/fwlink/?LinkId=533245 -->
@@ -10,7 +10,7 @@
     <script src="WinJS/js/WinJS.js"></script>
 
     <!-- App1 references -->
-    <link href="/css/default.css" rel="stylesheet" />
+    <link href="css/default.css" rel="stylesheet" />
     <script src="js/default.js"></script>
 </head>
 <body class="show-home">
@@ -19,7 +19,10 @@
     <div id="app">
 
     <!-- SPLIT VIEW -->
-    <div class="splitView" data-win-control="WinJS.UI.SplitView" >
+    <div class="splitView" data-win-control="WinJS.UI.SplitView" data-win-options="{
+        shownDisplayMode: WinJS.UI.SplitView.ShownDisplayMode.inline,
+	    hiddenDisplayMode: WinJS.UI.SplitView.HiddenDisplayMode.inline
+    }">
         <!-- Pane area -->
         <div>
             <div class="header">
@@ -28,10 +31,10 @@
             </div>
 
             <div class="nav-commands">
-                <div data-trail-id="0" data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Home', icon: 'home', onclick: Sample.homeClicked}"></div>
-                <div data-trail-id="1" data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Snoqualmie Falls Trail', icon: 'mappin', onclick: Sample.trailClicked}"></div>
-                <div data-trail-id="2" data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Foster Island Trail', icon: 'mappin', onclick: Sample.trailClicked}"></div>
-                <div data-trail-id="3" data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Alki Trail', icon: 'mappin', onclick: Sample.trailClicked}"></div>
+                <div data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Home', icon: 'home', onclick: Sample.homeClicked}"></div>
+                <div data-trail-id="0" data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Snoqualmie Falls Trail', icon: 'mappin', onclick: Sample.trailClicked}"></div>
+                <div data-trail-id="1" data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Foster Island Trail', icon: 'mappin', onclick: Sample.trailClicked}"></div>
+                <div data-trail-id="2" data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Alki Trail', icon: 'mappin', onclick: Sample.trailClicked}"></div>
                 
                
             </div>
@@ -91,8 +94,8 @@
             <!--ListView-->
 
            <!-- Simple template for the ListView instantiation  -->
-            <div class="myListTemplate" data-win-control="WinJS.Binding.Template" style="display: none">
-                <div class="myListTemplate">
+            <div class="myListTemplate" data-win-control="WinJS.Binding.Template" style="display: none" >
+                <div class="myListTemplate" >
                     <img src="#" class="myListTemplate-Image" data-win-bind="src: preview" />
                     <div class="myListTemplate-Detail">
                         <h4 data-win-bind="textContent: title"></h4>
@@ -110,8 +113,9 @@
                  data-win-options="{
                         itemDataSource: myList.data.dataSource,
                         itemTemplate: select('.myListTemplate'),
-                        selectionMode: 'none',
-                        tapBehavior: 'none',
+                        selectionMode: 'single',
+                        tapBehavior: 'invokeOnly',
+                         
                         layout: { type: WinJS.UI.ListLayout }
                 }">
             </div>
