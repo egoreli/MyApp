@@ -68,6 +68,11 @@
     ];
     var bindingList = new WinJS.Binding.List(array);
 
+    // var DefaultData = window.DefaultData = {
+    //     bindingList: bindingList,
+    //     array: array
+    // }
+
     WinJS.Namespace.define("DefaultData", {
         bindingList: bindingList,
         array: array
@@ -109,8 +114,10 @@
         "Alki Trail": 2
     }
 
-    //LISTVIEW
+    
 
+
+    //Binding Lists
         //create an array of trails to turn the allTrails object into an array
         var trailArray = [];
 
@@ -124,10 +131,35 @@
             data: new WinJS.Binding.List(trailArray)
         };
 
-    //END LISTVIEW
+    //END Binding Lists
 
+    //Projections
+        function alpha(first, second) {
+            if ((first.title).localeCompare(second.title) == 0)
+                return 0;
+            else if ((first.title).localeCompare(second.title) == 1)
+                 return 1;
+            else
+                 return -1;
+        }
+        function descendCompare(first, second) {
+            if (first.averageRating == second.averageRating)
+                return 0;
+            else if (first.averageRating < second.averageRating)
+                 return 1;
+            else
+                 return -1;
+        }
+        var sortedList = myList.data.createSorted(descendCompare);
+        var alphabeticalList = myList.data.createSorted(alpha);
+
+        myList.sortedList = sortedList;
+        myList.alphabeticalList = alphabeticalList;
+    //End Projections
+
+
+    //processAll
     WinJS.UI.processAll().then(function () {
-
         mySplitView.splitView = document.querySelector(".splitView").winControl;
         new WinJS.UI._WinKeyboard(mySplitView.splitView.paneElement); 
 

@@ -163,8 +163,7 @@ button.win-splitview-button:after {
 }
 
 .home-ui {
-    
-    max-width: 719px;
+    width: 100%;
     text-align: center;
     display: block;
     
@@ -176,42 +175,48 @@ button.win-splitview-button:after {
 .myListTemplate
 {
     width: 100%;
-    height: 180px;
+    height: 100%;
     padding: 5px;
     overflow: hidden;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
 }
-
-        .myListTemplate img.myListTemplate-Image 
-        {
-            width: 210px;
-            height: 160px;
-            margin: 5px;
-            margin-right:20px;
-        }
+.myListImage 
+{
+    width: 210px;
+    height: 160px;
+    margin: 5px;
+    margin-right:20px;
+}
 
         
-        .myListTemplate .myListTemplate-Detail
-        {
-            margin: 5px;
-             text-align: left;
-        }
+.myListDetail
+{
+    margin: 5px;
+    text-align: left;
+}
 
        
-       .listLayoutTopHeaderTemplateRoot, .gridLayoutLeftHeaderTemplateRoot {
-            font-size: larger;
-            margin-left: 16px;
-        }
+.listLayoutTopHeaderTemplateRoot, .gridLayoutLeftHeaderTemplateRoot {
+    font-size: larger;
+    margin-left: 16px;
+}
     
 /* CSS applied to the ListViews in this sample */
 #listView
 {
-    height: 500px;
-    width: 100%;
+    height: 100%;
+    /*still may be problem with height...overwrote it here*/
 }
 
-
+.mainList{
+    width: 49%;
+    display: inline-block;
+}
+ 
+.recommendedList{
+    width: 49%;
+    height: 100%;
+    display: inline-block;
+}
 
 
