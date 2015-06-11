@@ -3,6 +3,6 @@
   <PropertyGroup>
     <ReferenceCachePath>C:\Users\t-ligore.REDMOND\AppData\Local\Temp\App1_refcache</ReferenceCachePath>
     <ShowAllFiles>true</ShowAllFiles>
-    <AutoRefresh>false</AutoRefresh>
+    <AutoRefresh>true</AutoRefresh>
   </PropertyGroup>
 </Project>
