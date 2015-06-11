@@ -7,12 +7,12 @@
 
     //SPLIT VIEW
 
-    var Sample = window.Sample = {
+    var mySplitView = window.mySplitView = {
        
         splitView: null,
             togglePane: WinJS.UI.eventHandler(function (ev) {
-                if (Sample.splitView) {
-                    Sample.splitView.paneHidden = !Sample.splitView.paneHidden;
+                if (mySplitView.splitView) {
+                    mySplitView.splitView.paneHidden = !mySplitView.splitView.paneHidden;
 
 
                 }
@@ -108,6 +108,7 @@
         "Foster Island Trail": 1,
         "Alki Trail": 2
     }
+
     //LISTVIEW
 
         //create an array of trails to turn the allTrails object into an array
@@ -126,9 +127,9 @@
     //END LISTVIEW
 
     WinJS.UI.processAll().then(function () {
-        //MORE SPLITVIEW STUFF
-        Sample.splitView = document.querySelector(".splitView").winControl;
-        new WinJS.UI._WinKeyboard(Sample.splitView.paneElement); // Temporary workaround: Draw keyboard focus visuals on NavBarCommands
+
+        mySplitView.splitView = document.querySelector(".splitView").winControl;
+        new WinJS.UI._WinKeyboard(mySplitView.splitView.paneElement); 
 
         //allows listview to navigate on click
         var listView = document.getElementById("listView").winControl;
