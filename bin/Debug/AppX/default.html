@@ -14,15 +14,12 @@
     <script src="js/default.js"></script>
 </head>
 <body class="show-home">
-    <!-- SPLIT VIEW -->
+    
 
     <div id="app">
 
-    
-    <div class="splitView" data-win-control="WinJS.UI.SplitView" data-win-options="{
-        shownDisplayMode: WinJS.UI.SplitView.ShownDisplayMode.inline,
-	    hiddenDisplayMode: WinJS.UI.SplitView.HiddenDisplayMode.inline
-    }">
+    <!-- SPLIT VIEW -->
+    <div class="splitView" data-win-control="WinJS.UI.SplitView" >
         <!-- Pane area -->
         <div>
             <div class="header">
@@ -72,7 +69,7 @@
                 <p class="trail-description" id="description-content"> this is the description</p>
 
                 
-   
+                <!--RATING-->
                 <table> 
                     <tr class="detail">
                         <td>Rate this trail: </td>
@@ -81,7 +78,7 @@
                         </td>
                     </tr>
                 </table>  
-
+                 <!--END RATING-->
                
                 
            
@@ -100,6 +97,7 @@
                     <div class="myListTemplate-Detail">
                         <h4 data-win-bind="textContent: title"></h4>
                         <h6 data-win-bind="textContent: description"></h6>
+                         <div class="avgRating" data-win-control="WinJS.UI.Rating"  data-win-bind="winControl.averageRating: averageRating" ></div>
                     </div>
                 </div>
             </div>

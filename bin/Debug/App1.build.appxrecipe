@@ -16,9 +16,6 @@
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Desktop\TrailRater\default.html">
-      <PackagePath>default.html</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\images\africa.jpg">
       <PackagePath>images\africa.jpg</PackagePath>
     </AppxPackagedFile>

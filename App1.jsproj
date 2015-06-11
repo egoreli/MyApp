@@ -55,9 +55,6 @@
     <AppxManifest Include="package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <Content Include="C:\Users\t-ligore.REDMOND\Desktop\TrailRater\default.html">
-      <Link>default.html</Link>
-    </Content>
     <Content Include="images\africa.jpg" />
     <Content Include="images\Cliche.jpg" />
     <Content Include="images\colorado.jpg" />

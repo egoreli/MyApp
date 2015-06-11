@@ -26,7 +26,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Desktop\TrailRater\default.html">
       <PackagePath>default.html</PackagePath>
-      <Modified>2015-06-10T22:40:45.076</Modified>
+      <Modified>2015-06-10T23:48:42.012</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\images\africa.jpg">
       <PackagePath>images\africa.jpg</PackagePath>
@@ -118,7 +118,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\css\default.css">
       <PackagePath>css\default.css</PackagePath>
-      <Modified>2015-06-10T22:40:43.127</Modified>
+      <Modified>2015-06-10T23:23:05.363</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WinJS\css\ui-dark.css">
       <PackagePath>WinJS\css\ui-dark.css</PackagePath>
@@ -130,7 +130,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2015-06-10T22:33:53.037</Modified>
+      <Modified>2015-06-10T23:48:43.081</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WinJS\js\en-US\ui.strings.js">
       <PackagePath>WinJS\js\en-US\ui.strings.js</PackagePath>

@@ -9,6 +9,7 @@
     //SPLIT VIEW
 
     var Sample = window.Sample = {
+       
         splitView: null,
             togglePane: WinJS.UI.eventHandler(function (ev) {
                 if (Sample.splitView) {
@@ -28,7 +29,8 @@
                 document.body.classList.add("show-home");
                 document.body.classList.remove("show-trail");
 
-            })
+            }),
+         
     };
     //END SPLIT VIEW
 
