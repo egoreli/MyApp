@@ -7,26 +7,31 @@
     <!-- WinJS references -->
     <!-- To get the latest version of WinJS, go to: http://go.microsoft.com/fwlink/?LinkId=533245 -->
     <link href="WinJS/css/ui-dark.css" rel="stylesheet" />
-    <script src="WinJS/js/WinJS.js"></script>
+    <script src="WinJS/js/base.js"></script>
+    <script src="WinJS/js/ui.js"></script>
 
     <!-- App1 references -->
     <link href="css/default.css" rel="stylesheet" />
     <script src="js/default.js"></script>
 </head>
-<body class="show-home">
+<body class="show-home win-type-body">
     
 
     <div id="app">
 
     <!-- SPLIT VIEW -->
     <div class="splitView" data-win-control="WinJS.UI.SplitView" data-win-options="{
-        shownDisplayMode: WinJS.UI.SplitView.ShownDisplayMode.inline,
-	    hiddenDisplayMode: WinJS.UI.SplitView.HiddenDisplayMode.inline
-    }">
+            openedDisplayMode: 'inline',
+            closedDisplayMode: 'inline'
+         }">
         <!-- Pane area -->
         <div>
             <div class="header">
-                <button type="button" class="win-splitview-button" onclick="mySplitView.togglePane();"></button>
+                <button
+                    class="win-splitviewpanetoggle"
+                    data-win-control="WinJS.UI.SplitViewPaneToggle"
+                    data-win-options="{ splitView: select('.splitView') }"
+                ></button>
                 <div class="title">All Trails</div>
             </div>
 
@@ -41,6 +46,7 @@
         </div>
 
         <!-- Content area -->
+        
         <div class="contenttext">
             <h1>TrailRater</h1>
 
