@@ -38,12 +38,15 @@
         if (window.innerWidth < 480) { //small window
             mySplitView.splitView.openDisplayMode = WinJS.UI.SplitView.OpenedDisplayMode.overlay;
             mySplitView.splitView.closedDisplayMode = WinJS.UI.SplitView.ClosedDisplayMode.none;
-        } else if (window.innerWidth < 720) { //medium window
+            console.log("small");
+        } else if (window.innerWidth < 720) { //medium windowc
             mySplitView.splitView.openDisplayMode = WinJS.UI.SplitView.OpenedDisplayMode.overlay;
             mySplitView.splitView.closedDisplayMode = WinJS.UI.SplitView.ClosedDisplayMode.inline;
+            console.log("med");
         } else { //large window
             mySplitView.splitView.openDisplayMode = WinJS.UI.SplitView.OpenedDisplayMode.inline;
             mySplitView.splitView.closedDisplayMode = WinJS.UI.SplitView.ClosedDisplayMode.inline;
+            console.log("large");
         }
         
     }
