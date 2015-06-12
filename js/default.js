@@ -68,10 +68,10 @@
     ];
     var bindingList = new WinJS.Binding.List(array);
 
-    WinJS.Namespace.define("DefaultData", {
+    var DefaultData = window.DefaultData = {
         bindingList: bindingList,
         array: array
-    });
+    }
 
     // FLIP VIEW
 

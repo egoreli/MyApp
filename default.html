@@ -100,7 +100,8 @@
                     <div class="myListTemplate-Detail">
                         <h4 data-win-bind="textContent: title"></h4>
                         <h6 data-win-bind="textContent: description"></h6>
-                         <div class="avgRating" data-win-control="WinJS.UI.Rating"  data-win-bind="winControl.averageRating: averageRating" ></div>
+                         <div class="avgRating" data-win-control="WinJS.UI.Rating"  
+                             data-win-bind="winControl.averageRating: averageRating" ></div>
                     </div> 
                 </div>
             </div>
@@ -115,10 +116,10 @@
                         itemTemplate: select('.myListTemplate'),
                         selectionMode: 'single',
                         tapBehavior: 'invokeOnly',
-                         
                         layout: { type: WinJS.UI.ListLayout }
                 }">
             </div>
+
 
 
 
