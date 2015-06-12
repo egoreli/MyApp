@@ -10,13 +10,7 @@
     var mySplitView = window.mySplitView = {
        
         splitView: null,
-            togglePane: WinJS.UI.eventHandler(function (ev) {
-                if (mySplitView.splitView) {
-                    mySplitView.splitView.paneOpened = !mySplitView.splitView.paneOpened;
-
-
-                }
-            }),
+           
             trailClicked: WinJS.UI.eventHandler(function (ev) {
 
                 //get the trail-id
@@ -33,23 +27,7 @@
             }),
          
     };
-    function onResize() {
-        
-        if (window.innerWidth < 480) { //small window
-            mySplitView.splitView.openDisplayMode = WinJS.UI.SplitView.OpenedDisplayMode.overlay;
-            mySplitView.splitView.closedDisplayMode = WinJS.UI.SplitView.ClosedDisplayMode.none;
-            console.log("small");
-        } else if (window.innerWidth < 720) { //medium windowc
-            mySplitView.splitView.openDisplayMode = WinJS.UI.SplitView.OpenedDisplayMode.overlay;
-            mySplitView.splitView.closedDisplayMode = WinJS.UI.SplitView.ClosedDisplayMode.inline;
-            console.log("med");
-        } else { //large window
-            mySplitView.splitView.openDisplayMode = WinJS.UI.SplitView.OpenedDisplayMode.inline;
-            mySplitView.splitView.closedDisplayMode = WinJS.UI.SplitView.ClosedDisplayMode.inline;
-            console.log("large");
-        }
-        
-    }
+    
    
     //END SPLIT VIEW
 
@@ -213,7 +191,26 @@
         mySplitView.splitView = document.querySelector(".splitView").winControl;
         new WinJS.UI._WinKeyboard(mySplitView.splitView.paneElement);
         //makes the splitView adaptable to screen size
-        window.addEventListener("resize", onResize );
+        window.addEventListener("resize", function() {
+
+            if (window.innerWidth < 560) { //small window
+                mySplitView.splitView.openDisplayMode = WinJS.UI.SplitView.OpenedDisplayMode.overlay;
+                mySplitView.splitView.closedDisplayMode = WinJS.UI.SplitView.ClosedDisplayMode.none;
+                document.querySelector(".second-button").classList.remove("not-small");
+                console.log("small");
+            } else if (window.innerWidth < 1000) { //medium window
+                mySplitView.splitView.openDisplayMode = WinJS.UI.SplitView.OpenedDisplayMode.overlay;
+                mySplitView.splitView.closedDisplayMode = WinJS.UI.SplitView.ClosedDisplayMode.inline;
+                document.querySelector(".second-button").classList.add("not-small");
+                console.log("med");
+            } else { //large window
+                mySplitView.splitView.openDisplayMode = WinJS.UI.SplitView.OpenedDisplayMode.inline;
+                mySplitView.splitView.closedDisplayMode = WinJS.UI.SplitView.ClosedDisplayMode.inline;
+                document.querySelector(".second-button").classList.add("not-small");
+                console.log("large");
+            }
+
+        });
 
 
         
