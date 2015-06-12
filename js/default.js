@@ -74,8 +74,39 @@
         },
         2: {
             title: "Alki Trail", averageRating: 1.5, location: "Seattle, WA", preview: "images/Cliche.jpg", pictureArray: [
-                 { type: "item", title: "Cliche", picture: "images/Cliche.jpg" }
+                 { type: "item", title: "Cliche", picture: "images/Cliche.jpg" },
+                 { type: "item", title: "Musical", picture: "images/Musical.jpg" }
             ], description: "The Alki Trail rides along the northern and eastern shore of West Seattle along Alki Avenue. Largely riding on a widened sidewalk, separated from traffic by a parking lane and curb, traffic on the trail is separated for bikes and walkers, providing a less stressful experience for walkers and bikers alike. "
+        },
+        3: {
+            title: "Henok Trail", averageRating: 5, location: "Seattle, WA", preview: "images/Cliche.jpg", pictureArray: [
+                 { type: "item", title: "Cliche", picture: "images/Cliche.jpg" },
+                 { type: "item", title: "Musical", picture: "images/Musical.jpg" }
+            ], description: "The Henok Trail rides along the northern and eastern shore of West Seattle along Alki Avenue. Largely riding on a widened sidewalk, separated from traffic by a parking lane and curb, traffic on the trail is separated for bikes and walkers, providing a less stressful experience for walkers and bikers alike. "
+        },
+        4: {
+            title: "Liz Trail", averageRating: 3.6, location: "Seattle, WA", preview: "images/Cliche.jpg", pictureArray: [
+                 { type: "item", title: "Cliche", picture: "images/Cliche.jpg" },
+                 { type: "item", title: "Musical", picture: "images/Musical.jpg" }
+            ], description: "The Henok Trail rides along the northern and eastern shore of West Seattle along Alki Avenue. Largely riding on a widened sidewalk, separated from traffic by a parking lane and curb, traffic on the trail is separated for bikes and walkers, providing a less stressful experience for walkers and bikers alike. "
+        },
+        5: {
+            title: "Kirn Trail", averageRating: .3, location: "Seattle, WA", preview: "images/Cliche.jpg", pictureArray: [
+                 { type: "item", title: "Cliche", picture: "images/Cliche.jpg" },
+                 { type: "item", title: "Musical", picture: "images/Musical.jpg" }
+            ], description: "The Henok Trail rides along the northern and eastern shore of West Seattle along Alki Avenue. Largely riding on a widened sidewalk, separated from traffic by a parking lane and curb, traffic on the trail is separated for bikes and walkers, providing a less stressful experience for walkers and bikers alike. "
+        },
+        6: {
+            title: "Mike Trail", averageRating: 4.7, location: "Seattle, WA", preview: "images/Cliche.jpg", pictureArray: [
+                 { type: "item", title: "Cliche", picture: "images/Cliche.jpg" },
+                 { type: "item", title: "Musical", picture: "images/Musical.jpg" }
+            ], description: "The Henok Trail rides along the northern and eastern shore of West Seattle along Alki Avenue. Largely riding on a widened sidewalk, separated from traffic by a parking lane and curb, traffic on the trail is separated for bikes and walkers, providing a less stressful experience for walkers and bikers alike. "
+        },
+        7: {
+            title: "Jesse Trail", averageRating: 4, location: "Seattle, WA", preview: "images/Cliche.jpg", pictureArray: [
+                 { type: "item", title: "Cliche", picture: "images/Cliche.jpg" },
+                 { type: "item", title: "Musical", picture: "images/Musical.jpg" }
+            ], description: "The Henok Trail rides along the northern and eastern shore of West Seattle along Alki Avenue. Largely riding on a widened sidewalk, separated from traffic by a parking lane and curb, traffic on the trail is separated for bikes and walkers, providing a less stressful experience for walkers and bikers alike. "
         }
 
     }
@@ -125,7 +156,12 @@
     var trailNameToID = {
         "Snoqualmie Falls Trail": 0,
         "Foster Island Trail": 1,
-        "Alki Trail": 2
+        "Alki Trail": 2,
+        "Henok Trail": 3,
+        "Kirn Trail": 4,
+        "Liz Trail": 5,
+        "Mike Trail": 6,
+        "Jesse Trail": 7
     }
 
     
@@ -136,7 +172,7 @@
         var trailArray = [];
 
         //add each trail in the allTrails object into the trailArray
-        for (var i = 0; i < 3; ++i) { 
+        for (var i = 0; i < 7 ; ++i) { 
             trailArray.push(allTrails[i]);
         }
            
