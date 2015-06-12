@@ -86,12 +86,14 @@
                     <!-- Simple template for the ListView instantiation  -->
                     <div class="mainList">
                         <div class="myListTemplate" data-win-control="WinJS.Binding.Template"  >
+                            <div class ="myListItem">
                                 <img src="#" class="myListImage" data-win-bind="src: preview" />
                                 <div class="myListDetail">
                                     <h4 data-win-bind="textContent: title"></h4>
                                     <h6 data-win-bind="textContent: description"></h6>
                                     <div class="avgRating" data-win-control="WinJS.UI.Rating"  data-win-bind="winControl.averageRating: averageRating" ></div>
                                 </div> 
+                            </div>
                         </div>
 
                     <!-- The declarative markup necesary for ListView instantiation -->
