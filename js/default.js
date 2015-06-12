@@ -12,7 +12,7 @@
         splitView: null,
             togglePane: WinJS.UI.eventHandler(function (ev) {
                 if (mySplitView.splitView) {
-                    mySplitView.splitView.paneHidden = !mySplitView.splitView.paneHidden;
+                    mySplitView.splitView.paneOpened = !mySplitView.splitView.paneOpened;
 
 
                 }
@@ -33,6 +33,24 @@
             }),
          
     };
+    function onResize() {
+        
+        if (window.innerWidth < 480) { //small window
+            mySplitView.splitView.openDisplayMode = WinJS.UI.SplitView.OpenedDisplayMode.overlay;
+            mySplitView.splitView.closedDisplayMode = WinJS.UI.SplitView.ClosedDisplayMode.none;
+            console.log("small");
+        } else if (window.innerWidth < 720) { //medium windowc
+            mySplitView.splitView.openDisplayMode = WinJS.UI.SplitView.OpenedDisplayMode.overlay;
+            mySplitView.splitView.closedDisplayMode = WinJS.UI.SplitView.ClosedDisplayMode.inline;
+            console.log("med");
+        } else { //large window
+            mySplitView.splitView.openDisplayMode = WinJS.UI.SplitView.OpenedDisplayMode.inline;
+            mySplitView.splitView.closedDisplayMode = WinJS.UI.SplitView.ClosedDisplayMode.inline;
+            console.log("large");
+        }
+        
+    }
+   
     //END SPLIT VIEW
 
     
@@ -68,15 +86,11 @@
     ];
     var bindingList = new WinJS.Binding.List(array);
 
-    // var DefaultData = window.DefaultData = {
-    //     bindingList: bindingList,
-    //     array: array
-    // }
 
-    WinJS.Namespace.define("DefaultData", {
+    var DefaultData = window.DefaultData = {
         bindingList: bindingList,
         array: array
-    });
+    }
 
     // FLIP VIEW
 
@@ -161,7 +175,12 @@
     //processAll
     WinJS.UI.processAll().then(function () {
         mySplitView.splitView = document.querySelector(".splitView").winControl;
-        new WinJS.UI._WinKeyboard(mySplitView.splitView.paneElement); 
+        new WinJS.UI._WinKeyboard(mySplitView.splitView.paneElement);
+        //makes the splitView adaptable to screen size
+        window.addEventListener("resize", onResize );
+
+
+        
 
         //allows listview to navigate on click
         var listView = document.getElementById("listView").winControl;

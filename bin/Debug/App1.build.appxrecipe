@@ -88,35 +88,59 @@
     <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\css\default.css">
       <PackagePath>css\default.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WinJS\css\ui-dark.css">
-      <PackagePath>WinJS\css\ui-dark.css</PackagePath>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WInJS\css\ui-dark.css">
+      <PackagePath>WInJS\css\ui-dark.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WinJS\css\ui-light.css">
-      <PackagePath>WinJS\css\ui-light.css</PackagePath>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WInJS\css\ui-dark.min.css">
+      <PackagePath>WInJS\css\ui-dark.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WInJS\css\ui-light.css">
+      <PackagePath>WInJS\css\ui-light.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WInJS\css\ui-light.min.css">
+      <PackagePath>WInJS\css\ui-light.min.css</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\js\default.js">
       <PackagePath>js\default.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WinJS\js\en-US\ui.strings.js">
-      <PackagePath>WinJS\js\en-US\ui.strings.js</PackagePath>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WInJS\js\base.js">
+      <PackagePath>WInJS\js\base.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WinJS\js\WinJS.js">
-      <PackagePath>WinJS\js\WinJS.js</PackagePath>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WInJS\js\base.min.js">
+      <PackagePath>WInJS\js\base.min.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WinJS\js\WinJS.intellisense.js">
-      <PackagePath>WinJS\js\WinJS.intellisense.js</PackagePath>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WInJS\js\en-US\ui.strings.js">
+      <PackagePath>WInJS\js\en-US\ui.strings.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WinJS\js\WinJS.intellisense-setup.js">
-      <PackagePath>WinJS\js\WinJS.intellisense-setup.js</PackagePath>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WInJS\js\ui.js">
+      <PackagePath>WInJS\js\ui.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WinJS\js\WinJS.min.js">
-      <PackagePath>WinJS\js\WinJS.min.js</PackagePath>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WInJS\js\ui.min.js">
+      <PackagePath>WInJS\js\ui.min.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WinJS\fonts\Symbols.ttf">
-      <PackagePath>WinJS\fonts\Symbols.ttf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WInJS\js\WinJS.intellisense-setup.js">
+      <PackagePath>WInJS\js\WinJS.intellisense-setup.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WinJS\js\WinJS.min.js.map">
-      <PackagePath>WinJS\js\WinJS.min.js.map</PackagePath>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WInJS\js\WinJS.intellisense.js">
+      <PackagePath>WInJS\js\WinJS.intellisense.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WInJS\fonts\Symbols.ttf">
+      <PackagePath>WInJS\fonts\Symbols.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WInJS\js\base.min.js.map">
+      <PackagePath>WInJS\js\base.min.js.map</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WInJS\js\ui.min.js.map">
+      <PackagePath>WInJS\js\ui.min.js.map</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WInJS\License.txt">
+      <PackagePath>WInJS\License.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WInJS\package.json">
+      <PackagePath>WInJS\package.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WInJS\README.md">
+      <PackagePath>WInJS\README.md</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
