@@ -1,4 +1,7 @@
-﻿.content,
+﻿body{
+    height: 100%;
+}
+.content,
 #app {
     height: 100%;
 }
@@ -43,11 +46,12 @@
 #app .contenttext {
     margin-left: 20px;
     margin-top: 6px;
+    height: 100%;
 }
 
     #app .contenttext h1 {
         font-family: Broadway;
-        font-size: xx-large;
+        font-size: 40px;
     }
 
 /*SplitView pane show button style*/
@@ -164,18 +168,24 @@ button.win-splitview-button:after {
 
 .home-ui {
     width: 100%;
-    height: 1000px;
+    height: 100%;
     text-align: center;
     display: block;
+    overflow: auto;
     
 }
 
 /*Listview*/
-
+#hometitle{
+    font-size: 400px;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 10px;
+}
 .myListItem
 {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     padding: 5px;
     overflow: hidden;
     display: flex;
@@ -210,7 +220,7 @@ button.win-splitview-button:after {
 
 .mainList{
     width: 59%;
-    height: 100%;
+    height: calc(100% - 60px);
     display: inline-block;
 }
  
@@ -218,7 +228,6 @@ button.win-splitview-button:after {
     width: 40%;
     height: 100%;
     display: inline-block;
-    overflow-y: scroll;
 }
 
 
