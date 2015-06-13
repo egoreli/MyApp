@@ -19,10 +19,7 @@
     <div id="app">
 
     <!-- SPLIT VIEW -->
-    <div class="splitView" data-win-control="WinJS.UI.SplitView" data-win-options="{
-            openedDisplayMode: 'inline',
-            closedDisplayMode: 'inline'
-         }">
+    <div class="splitView" data-win-control="WinJS.UI.SplitView">
 
         <!-- Pane area -->
         <div>
@@ -40,10 +37,15 @@
                 <div data-trail-id="0" data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Snoqualmie Falls Trail', icon: 'mappin', onclick: mySplitView.trailClicked}"></div>
                 <div data-trail-id="1" data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Foster Island Trail', icon: 'mappin', onclick: mySplitView.trailClicked}"></div>
                 <div data-trail-id="2" data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Alki Trail', icon: 'mappin', onclick: mySplitView.trailClicked}"></div>
+                <div data-trail-id="3" data-win-control="WinJS.UI.NavBarCommand" data-win-options="{ label: 'Henok Trail', icon: 'mappin', onclick: mySplitView.trailClicked}"></div>
             </div>
         </div>
         <!-- Content area -->
-        
+        <button
+            class="win-splitviewpanetoggle second-button not-small"
+            data-win-control="WinJS.UI.SplitViewPaneToggle"
+            data-win-options="{ splitView: select('.splitView') }"
+        ></button>
         <div class="contenttext">
             <h1>TrailRater</h1>
             <div class="trail-ui"> 
@@ -65,9 +67,10 @@
                 <!-- END FLIP VIEW -->
                 <!-- DESCRIPTION -->
                 <div class="description"> 
-                    <h2 class="trail-title"> Rainier Trail </h2>
-                    <p class="trail-location">  Seattle, WA </p>
-                    <p class="trail-description" id="description-content"> this is the description</p>
+                    <!-- this is where the title, location and description are injected for each hiking page -->
+                    <h2 class="trail-title"></h2>
+                    <p class="trail-location"></p>
+                    <p class="trail-description" id="description-content"></p>
                     <!--RATING-->
                     <table> 
                         <tr class="detail">
@@ -81,33 +84,47 @@
                 </div>
             </div>  <!-- closes trail-ui-->
             <div class="home-ui">
-                <!--ListView-->
-                <!-- Simple template for the ListView instantiation  -->
-                <div class="myListTemplate" data-win-control="WinJS.Binding.Template" style="display: none" >
-                    <div class="myListTemplate" >
-                        <img src="#" class="myListTemplate-Image" data-win-bind="src: preview" />
-                        <div class="myListTemplate-Detail">
-                            <h4 data-win-bind="textContent: title"></h4>
-                            <h6 data-win-bind="textContent: description"></h6>
-                            <div class="avgRating" data-win-control="WinJS.UI.Rating"  data-win-bind="winControl.averageRating: averageRating" ></div>
-                        </div> 
-                    </div>
-                </div>
+                <!--ListView and Repeater-->
+                    <!-- Simple template for the ListView instantiation  -->
+                    <div class="mainList">
+                        <div class="myListTemplate" data-win-control="WinJS.Binding.Template"  >
+                            <div class ="myListItem">
+                                <img src="#" class="myListImage" data-win-bind="src: preview" />
+                                <div class="myListDetail">
+                                    <h4 data-win-bind="textContent: title"></h4>
+                                    <h6 data-win-bind="textContent: description"></h6>
+                                    <div class="avgRating" data-win-control="WinJS.UI.Rating"  data-win-bind="winControl.averageRating: averageRating" ></div>
+                                </div> 
+                            </div>
+                        </div>
 
-                <!-- The declarative markup necesary for ListView instantiation -->
-                <!-- Call WinJS.UI.processAll() in your initialization code -->
-                <div id="listView"
-                    class="win-selectionstylefilled"
-                    data-win-control="WinJS.UI.ListView"
-                    data-win-options="{
-                    itemDataSource: myList.data.dataSource,
-                    itemTemplate: select('.myListTemplate'),
-                    selectionMode: 'single',
-                    tapBehavior: 'invokeOnly',
-                    layout: { type: WinJS.UI.ListLayout }
-                    }">
-                </div>
-                <!--End ListView-->
+                    <!-- The declarative markup necesary for ListView instantiation -->
+                    <!-- Call WinJS.UI.processAll() in your initialization code -->
+                        <div id="listView"
+                            class="win-selectionstylefilled"
+                            data-win-control="WinJS.UI.ListView"
+                            data-win-options="{
+                            itemDataSource: myList.alphabeticalList.dataSource,
+                            itemTemplate: select('.myListTemplate'),
+                            selectionMode: 'single',
+                            tapBehavior: 'invokeOnly',
+                            layout: { type: WinJS.UI.ListLayout }
+                            }">
+                        </div>
+                    </div>
+                    <!-- Repeater -->
+                     <div class="recommendedList">
+                        <h2> Sorted By Rating</h2>
+                        <div data-win-control="WinJS.UI.Repeater" data-win-options="{data: myList.sortedList}">
+                            <div>
+                                <h1 style="display: inline-block" data-win-bind="textContent: title"></h1> 
+                                <div class="win-small" data-win-control="WinJS.UI.Rating" data-win-bind="winControl.userRating: averageRating"></div>
+                                <br><img src="" style="width: 20%; height: 20%" data-win-bind = "src: preview">
+<!--                                 <h3 style="display: inline-block" data-win-bind="textContent: description"></h3>
+ -->                        </div> 
+                        </div>
+                    </div>
+                <!--End ListView and Repeater-->
             </div>  <!-- closes home-ui-->
         </div>
     </div> 

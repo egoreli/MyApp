@@ -19,10 +19,7 @@
     <div id="app">
 
     <!-- SPLIT VIEW -->
-    <div class="splitView" data-win-control="WinJS.UI.SplitView" data-win-options="{
-            openedDisplayMode: 'inline',
-            closedDisplayMode: 'inline'
-         }">
+    <div class="splitView" data-win-control="WinJS.UI.SplitView">
 
         <!-- Pane area -->
         <div>
@@ -49,7 +46,11 @@
             </div>
         </div>
         <!-- Content area -->
-        
+        <button
+            class="win-splitviewpanetoggle second-button not-small"
+            data-win-control="WinJS.UI.SplitViewPaneToggle"
+            data-win-options="{ splitView: select('.splitView') }"
+        ></button>
         <div class="contenttext">
             <div class="trail-ui"> 
                 <!-- FLIP VIEW -->

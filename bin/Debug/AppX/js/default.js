@@ -10,13 +10,7 @@
     var mySplitView = window.mySplitView = {
        
         splitView: null,
-            togglePane: WinJS.UI.eventHandler(function (ev) {
-                if (mySplitView.splitView) {
-                    mySplitView.splitView.paneOpened = !mySplitView.splitView.paneOpened;
-
-
-                }
-            }),
+           
             trailClicked: WinJS.UI.eventHandler(function (ev) {
 
                 //get the trail-id
@@ -33,23 +27,7 @@
             }),
          
     };
-    function onResize() {
-        
-        if (window.innerWidth < 480) { //small window
-            mySplitView.splitView.openDisplayMode = WinJS.UI.SplitView.OpenedDisplayMode.overlay;
-            mySplitView.splitView.closedDisplayMode = WinJS.UI.SplitView.ClosedDisplayMode.none;
-            console.log("small");
-        } else if (window.innerWidth < 720) { //medium windowc
-            mySplitView.splitView.openDisplayMode = WinJS.UI.SplitView.OpenedDisplayMode.overlay;
-            mySplitView.splitView.closedDisplayMode = WinJS.UI.SplitView.ClosedDisplayMode.inline;
-            console.log("med");
-        } else { //large window
-            mySplitView.splitView.openDisplayMode = WinJS.UI.SplitView.OpenedDisplayMode.inline;
-            mySplitView.splitView.closedDisplayMode = WinJS.UI.SplitView.ClosedDisplayMode.inline;
-            console.log("large");
-        }
-        
-    }
+    
    
     //END SPLIT VIEW
 
@@ -74,8 +52,39 @@
         },
         2: {
             title: "Alki Trail", averageRating: 1.5, location: "Seattle, WA", preview: "images/Cliche.jpg", pictureArray: [
-                 { type: "item", title: "Cliche", picture: "images/Cliche.jpg" }
+                 { type: "item", title: "Cliche", picture: "images/Cliche.jpg" },
+                 { type: "item", title: "Musical", picture: "images/Musical.jpg" }
             ], description: "The Alki Trail rides along the northern and eastern shore of West Seattle along Alki Avenue. Largely riding on a widened sidewalk, separated from traffic by a parking lane and curb, traffic on the trail is separated for bikes and walkers, providing a less stressful experience for walkers and bikers alike. "
+        },
+        3: {
+            title: "Henok Trail", averageRating: 5, location: "Seattle, WA", preview: "images/Cliche.jpg", pictureArray: [
+                 { type: "item", title: "Cliche", picture: "images/Cliche.jpg" },
+                 { type: "item", title: "Musical", picture: "images/Musical.jpg" }
+            ], description: "The Henok Trail rides along the northern and eastern shore of West Seattle along Alki Avenue. Largely riding on a widened sidewalk, separated from traffic by a parking lane and curb, traffic on the trail is separated for bikes and walkers, providing a less stressful experience for walkers and bikers alike. "
+        },
+        4: {
+            title: "Liz Trail", averageRating: 3.6, location: "Seattle, WA", preview: "images/Cliche.jpg", pictureArray: [
+                 { type: "item", title: "Cliche", picture: "images/Cliche.jpg" },
+                 { type: "item", title: "Musical", picture: "images/Musical.jpg" }
+            ], description: "The Henok Trail rides along the northern and eastern shore of West Seattle along Alki Avenue. Largely riding on a widened sidewalk, separated from traffic by a parking lane and curb, traffic on the trail is separated for bikes and walkers, providing a less stressful experience for walkers and bikers alike. "
+        },
+        5: {
+            title: "Kirn Trail", averageRating: .3, location: "Seattle, WA", preview: "images/Cliche.jpg", pictureArray: [
+                 { type: "item", title: "Cliche", picture: "images/Cliche.jpg" },
+                 { type: "item", title: "Musical", picture: "images/Musical.jpg" }
+            ], description: "The Henok Trail rides along the northern and eastern shore of West Seattle along Alki Avenue. Largely riding on a widened sidewalk, separated from traffic by a parking lane and curb, traffic on the trail is separated for bikes and walkers, providing a less stressful experience for walkers and bikers alike. "
+        },
+        6: {
+            title: "Mike Trail", averageRating: 4.7, location: "Seattle, WA", preview: "images/Cliche.jpg", pictureArray: [
+                 { type: "item", title: "Cliche", picture: "images/Cliche.jpg" },
+                 { type: "item", title: "Musical", picture: "images/Musical.jpg" }
+            ], description: "The Henok Trail rides along the northern and eastern shore of West Seattle along Alki Avenue. Largely riding on a widened sidewalk, separated from traffic by a parking lane and curb, traffic on the trail is separated for bikes and walkers, providing a less stressful experience for walkers and bikers alike. "
+        },
+        7: {
+            title: "Jesse Trail", averageRating: 4, location: "Seattle, WA", preview: "images/Cliche.jpg", pictureArray: [
+                 { type: "item", title: "Cliche", picture: "images/Cliche.jpg" },
+                 { type: "item", title: "Musical", picture: "images/Musical.jpg" }
+            ], description: "The Henok Trail rides along the northern and eastern shore of West Seattle along Alki Avenue. Largely riding on a widened sidewalk, separated from traffic by a parking lane and curb, traffic on the trail is separated for bikes and walkers, providing a less stressful experience for walkers and bikers alike. "
         }
 
     }
@@ -85,6 +94,7 @@
             { type: "item", picture: "images/p3.jpg" }
     ];
     var bindingList = new WinJS.Binding.List(array);
+
 
     var DefaultData = window.DefaultData = {
         bindingList: bindingList,
@@ -124,16 +134,23 @@
     var trailNameToID = {
         "Snoqualmie Falls Trail": 0,
         "Foster Island Trail": 1,
-        "Alki Trail": 2
+        "Alki Trail": 2,
+        "Henok Trail": 3,
+        "Kirn Trail": 4,
+        "Liz Trail": 5,
+        "Mike Trail": 6,
+        "Jesse Trail": 7
     }
 
-    //LISTVIEW
+    
 
+
+    //Binding Lists
         //create an array of trails to turn the allTrails object into an array
         var trailArray = [];
 
         //add each trail in the allTrails object into the trailArray
-        for (var i = 0; i < 3; ++i) { 
+        for (var i = 0; i < 7 ; ++i) { 
             trailArray.push(allTrails[i]);
         }
            
@@ -142,14 +159,58 @@
             data: new WinJS.Binding.List(trailArray)
         };
 
-    //END LISTVIEW
+    //END Binding Lists
 
+    //Projections
+        function alpha(first, second) {
+            if ((first.title).localeCompare(second.title) == 0)
+                return 0;
+            else if ((first.title).localeCompare(second.title) == 1)
+                 return 1;
+            else
+                 return -1;
+        }
+        function descendCompare(first, second) {
+            if (first.averageRating == second.averageRating)
+                return 0;
+            else if (first.averageRating < second.averageRating)
+                 return 1;
+            else
+                 return -1;
+        }
+        var sortedList = myList.data.createSorted(descendCompare);
+        var alphabeticalList = myList.data.createSorted(alpha);
+
+        myList.sortedList = sortedList;
+        myList.alphabeticalList = alphabeticalList;
+    //End Projections
+
+
+    //processAll
     WinJS.UI.processAll().then(function () {
-
         mySplitView.splitView = document.querySelector(".splitView").winControl;
         new WinJS.UI._WinKeyboard(mySplitView.splitView.paneElement);
         //makes the splitView adaptable to screen size
-        window.addEventListener("resize", onResize );
+        window.addEventListener("resize", function() {
+
+            if (window.innerWidth < 560) { //small window
+                mySplitView.splitView.openDisplayMode = WinJS.UI.SplitView.OpenedDisplayMode.overlay;
+                mySplitView.splitView.closedDisplayMode = WinJS.UI.SplitView.ClosedDisplayMode.none;
+                document.querySelector(".second-button").classList.remove("not-small");
+                console.log("small");
+            } else if (window.innerWidth < 1000) { //medium window
+                mySplitView.splitView.openDisplayMode = WinJS.UI.SplitView.OpenedDisplayMode.overlay;
+                mySplitView.splitView.closedDisplayMode = WinJS.UI.SplitView.ClosedDisplayMode.inline;
+                document.querySelector(".second-button").classList.add("not-small");
+                console.log("med");
+            } else { //large window
+                mySplitView.splitView.openDisplayMode = WinJS.UI.SplitView.OpenedDisplayMode.inline;
+                mySplitView.splitView.closedDisplayMode = WinJS.UI.SplitView.ClosedDisplayMode.inline;
+                document.querySelector(".second-button").classList.add("not-small");
+                console.log("large");
+            }
+
+        });
 
 
         
