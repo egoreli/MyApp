@@ -185,7 +185,7 @@ button.win-splitview-button:after {
     font-size: 400px;
     padding: 0px;
     margin: 0px;
-    padding-top: 10px;
+    padding-top: 0px;
 }
 .myListItem
 {
@@ -225,13 +225,16 @@ button.win-splitview-button:after {
 
 .mainList{
     width: 59%;
-    height: calc(100% - 60px);
+    height: calc(100% - 53px);
     display: inline-block;
+
+    float: left;
 }
  
 .recommendedList{
     width: 40%;
     height: 100%;
+    overflow: hidden;
     display: inline-block;
 }
 
