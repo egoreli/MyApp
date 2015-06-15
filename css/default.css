@@ -224,7 +224,7 @@ button.win-splitview-button:after {
 }
 
 .mainList{
-    width: 59%;
+    width: 75%;
     height: calc(100% - 53px);
     display: inline-block;
 
@@ -232,7 +232,7 @@ button.win-splitview-button:after {
 }
  
 .recommendedList{
-    width: 40%;
+    width: 24%;
     height: 100%;
     overflow: hidden;
     display: inline-block;
