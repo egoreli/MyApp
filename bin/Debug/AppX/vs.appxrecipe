@@ -138,7 +138,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2015-06-12T23:00:04.328</Modified>
+      <Modified>2015-06-15T21:43:08.443</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\t-ligore.REDMOND\Documents\Visual Studio 2015\Projects\App1\App1\WInJS\js\base.js">
       <PackagePath>WInJS\js\base.js</PackagePath>

@@ -194,17 +194,17 @@
         window.addEventListener("resize", function() {
 
             if (window.innerWidth < 560) { //small window
-                mySplitView.splitView.openDisplayMode = WinJS.UI.SplitView.OpenedDisplayMode.overlay;
+                mySplitView.splitView.openedDisplayMode = WinJS.UI.SplitView.OpenedDisplayMode.overlay;
                 mySplitView.splitView.closedDisplayMode = WinJS.UI.SplitView.ClosedDisplayMode.none;
                 document.querySelector(".second-button").classList.remove("not-small");
                 console.log("small");
             } else if (window.innerWidth < 1000) { //medium window
-                mySplitView.splitView.openDisplayMode = WinJS.UI.SplitView.OpenedDisplayMode.overlay;
+                mySplitView.splitView.openedDisplayMode = WinJS.UI.SplitView.OpenedDisplayMode.overlay;
                 mySplitView.splitView.closedDisplayMode = WinJS.UI.SplitView.ClosedDisplayMode.inline;
                 document.querySelector(".second-button").classList.add("not-small");
                 console.log("med");
             } else { //large window
-                mySplitView.splitView.openDisplayMode = WinJS.UI.SplitView.OpenedDisplayMode.inline;
+                mySplitView.splitView.openedDisplayMode = WinJS.UI.SplitView.OpenedDisplayMode.inline;
                 mySplitView.splitView.closedDisplayMode = WinJS.UI.SplitView.ClosedDisplayMode.inline;
                 document.querySelector(".second-button").classList.add("not-small");
                 console.log("large");
