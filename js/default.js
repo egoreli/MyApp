@@ -124,6 +124,7 @@
         //update Flipview
         var flipViewElt = document.body.querySelector(".flipView");
         flipViewElt.winControl.itemDataSource = new WinJS.Binding.List(trail.pictureArray).dataSource;
+        flipViewElt.winControl.forceLayout();//helps google chrome render the flipView
 
         //update Rating
         var ratingElt = document.body.querySelector(".rating");
