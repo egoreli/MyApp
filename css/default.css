@@ -114,6 +114,9 @@ button.win-splitview-button:after {
 }
 
 /*Styles used in the Item Template*/
+.avgRating{
+    color: rgba(216, 172, 10, 1.0);
+}
 .overlaidItemTemplate {
     width: 100%;
     max-width: 480px;
@@ -185,7 +188,7 @@ button.win-splitview-button:after {
     font-size: 400px;
     padding: 0px;
     margin: 0px;
-    padding-top: 0px;
+    padding-top: 10px;
 }
 .myListItem
 {
@@ -197,8 +200,8 @@ button.win-splitview-button:after {
 }
 .myListImage 
 {
-    width: 40%;
-    height: 100%;
+    width: 400px;
+    height: 170px;
     margin: 5px;
     margin-right:20px;
 }
@@ -225,7 +228,7 @@ button.win-splitview-button:after {
 
 .mainList{
     width: 75%;
-    height: calc(100% - 53px);
+    height: calc(100% - 68px);
     display: inline-block;
 
     float: left;
