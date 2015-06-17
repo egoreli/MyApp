@@ -57,33 +57,33 @@
             ], description: "The Alki Trail rides along the northern and eastern shore of West Seattle along Alki Avenue. Largely riding on a widened sidewalk, separated from traffic by a parking lane and curb, traffic on the trail is separated for bikes and walkers, providing a less stressful experience for walkers and bikers alike. "
         },
         3: {
-            title: "Henok Trail", averageRating: 5, location: "Seattle, WA", preview: "images/Cliche.jpg", pictureArray: [
-                 { type: "item", title: "Cliche", picture: "images/Cliche.jpg" },
-                 { type: "item", title: "Musical", picture: "images/Musical.jpg" }
+            title: "Henok Trail", averageRating: 5, location: "Seattle, WA", preview: "images/p7.jpg", pictureArray: [
+                 { type: "item", title: "Cliche", picture: "images/p7.jpg" },
+                 { type: "item", title: "Musical", picture: "images/p12.jpg" }
             ], description: "The Henok Trail rides along the northern and eastern shore of West Seattle along Alki Avenue. Largely riding on a widened sidewalk, separated from traffic by a parking lane and curb, traffic on the trail is separated for bikes and walkers, providing a less stressful experience for walkers and bikers alike. "
         },
         4: {
-            title: "Liz Trail", averageRating: 3.6, location: "Seattle, WA", preview: "images/Cliche.jpg", pictureArray: [
-                 { type: "item", title: "Cliche", picture: "images/Cliche.jpg" },
-                 { type: "item", title: "Musical", picture: "images/Musical.jpg" }
+            title: "Liz Trail", averageRating: 3.6, location: "Seattle, WA", preview: "images/p8.jpg", pictureArray: [
+                 { type: "item", title: "Cliche", picture: "images/p8.jpg" },
+                 { type: "item", title: "Musical", picture: "images/p13.jpg" }
             ], description: "The Henok Trail rides along the northern and eastern shore of West Seattle along Alki Avenue. Largely riding on a widened sidewalk, separated from traffic by a parking lane and curb, traffic on the trail is separated for bikes and walkers, providing a less stressful experience for walkers and bikers alike. "
         },
         5: {
-            title: "Kirn Trail", averageRating: .3, location: "Seattle, WA", preview: "images/Cliche.jpg", pictureArray: [
-                 { type: "item", title: "Cliche", picture: "images/Cliche.jpg" },
-                 { type: "item", title: "Musical", picture: "images/Musical.jpg" }
+            title: "Kirn Trail", averageRating: .3, location: "Seattle, WA", preview: "images/p17.jpg", pictureArray: [
+                 { type: "item", title: "Cliche", picture: "images/p17.jpg" },
+                 { type: "item", title: "Musical", picture: "images/p14.jpg" }
             ], description: "The Henok Trail rides along the northern and eastern shore of West Seattle along Alki Avenue. Largely riding on a widened sidewalk, separated from traffic by a parking lane and curb, traffic on the trail is separated for bikes and walkers, providing a less stressful experience for walkers and bikers alike. "
         },
         6: {
-            title: "Mike Trail", averageRating: 4.7, location: "Seattle, WA", preview: "images/Cliche.jpg", pictureArray: [
-                 { type: "item", title: "Cliche", picture: "images/Cliche.jpg" },
-                 { type: "item", title: "Musical", picture: "images/Musical.jpg" }
+            title: "Mike Trail", averageRating: 4.7, location: "Seattle, WA", preview: "images/p10.jpg", pictureArray: [
+                 { type: "item", title: "Cliche", picture: "images/p10.jpg" },
+                 { type: "item", title: "Musical", picture: "images/p15.jpg" }
             ], description: "The Henok Trail rides along the northern and eastern shore of West Seattle along Alki Avenue. Largely riding on a widened sidewalk, separated from traffic by a parking lane and curb, traffic on the trail is separated for bikes and walkers, providing a less stressful experience for walkers and bikers alike. "
         },
         7: {
-            title: "Jesse Trail", averageRating: 4, location: "Seattle, WA", preview: "images/Cliche.jpg", pictureArray: [
-                 { type: "item", title: "Cliche", picture: "images/Cliche.jpg" },
-                 { type: "item", title: "Musical", picture: "images/Musical.jpg" }
+            title: "Jesse Trail", averageRating: 4, location: "Seattle, WA", preview: "images/p11.jpg", pictureArray: [
+                 { type: "item", title: "Cliche", picture: "images/p11.jpg" },
+                 { type: "item", title: "Musical", picture: "images/p18.jpg" }
             ], description: "The Henok Trail rides along the northern and eastern shore of West Seattle along Alki Avenue. Largely riding on a widened sidewalk, separated from traffic by a parking lane and curb, traffic on the trail is separated for bikes and walkers, providing a less stressful experience for walkers and bikers alike. "
         }
 
@@ -124,6 +124,7 @@
         //update Flipview
         var flipViewElt = document.body.querySelector(".flipView");
         flipViewElt.winControl.itemDataSource = new WinJS.Binding.List(trail.pictureArray).dataSource;
+        flipViewElt.winControl.forceLayout();//helps google chrome render the flipView
 
         //update Rating
         var ratingElt = document.body.querySelector(".rating");
